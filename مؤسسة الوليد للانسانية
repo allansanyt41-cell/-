@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>طلب مساعدة – مؤسسة الوليد للإنسانية</title>
+  <style>
+    body {font-family: Tahoma, sans-serif; background:#f2f2f2; direction:rtl; padding:20px;}
+    .container {max-width:600px;margin:auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.1);}
+    h2 {text-align:center;color:#0066cc;}
+    label {display:block; margin-top:15px; font-weight:bold;}
+    input, textarea, select {width:100%; padding:10px; margin-top:5px; border:1px solid #ccc;border-radius:5px;}
+    button {margin-top:20px;padding:12px 20px; background:#0066cc; color:#fff; border:none; border-radius:5px; cursor:pointer;}
+    button:hover {background:#004c99;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>طلب مساعدة – مؤسسة الوليد للإنسانية</h2>
+    <p style="text-align:center;">تقديم طلب مساعدات مالية، سكن، أو سيارة</p>
+    <form action="https://formspree.io/f/xxxxx" method="POST">
+      <label>الاسم الكامل:</label><input type="text" name="name" required />
+      <label>رقم الهوية / الإقامة:</label><input type="text" name="id" required />
+      <label>رقم الجوال:</label><input type="tel" name="phone" required />
+      <label>البريد الإلكتروني:</label><input type="email" name="email" />
+      <label>نوع المساعدة المطلوبة:</label>
+      <select name="type">
+        <option value="مالية">مالية</option>
+        <option value="سكن">سكن</option>
+        <option value="سيارة">سيارة</option>
+        <option value="أخرى">أخرى</option>
+      </select>
+      <label>تفاصيل الطلب:</label><textarea name="details" rows="5"></textarea>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </div>
+</body>
+</html>
